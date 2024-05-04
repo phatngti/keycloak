@@ -17,9 +17,9 @@ services:
       - postgres
     container_name: local_keycloak
     image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION}
-    ports:
-      - "8080:8080"
-      - "8443:8443"
+    # ports:
+    #   - "8080:8080"
+    #   - "8443:8443"
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
